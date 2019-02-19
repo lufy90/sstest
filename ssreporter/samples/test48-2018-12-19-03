@@ -1,0 +1,202 @@
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: test48: GNU/Linux
+   OS: GNU/Linux -- 4.18.0-32.isoft.aarch64 -- #1 SMP Mon Dec 17 17:41:07 CST 2018
+   Machine: aarch64 (aarch64)
+   Language: en_US.utf8 (charmap="UTF-8", collate="UTF-8")
+   CPU 0: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 1: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 2: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 3: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 4: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 5: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 6: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 7: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 8: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 9: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 10: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 11: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 12: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 13: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 14: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 15: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 16: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 17: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 18: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 19: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 20: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 21: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 22: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 23: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 24: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 25: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 26: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 27: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 28: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 29: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 30: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 31: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 32: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 33: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 34: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 35: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 36: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 37: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 38: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 39: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 40: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 41: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 42: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 43: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 44: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 45: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 46: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 47: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 48: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 49: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 50: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 51: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 52: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 53: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 54: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 55: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 56: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 57: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 58: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 59: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 60: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 61: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 62: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   CPU 63: ARMv8 Processor rev 2 (v8l) (0.0 bogomips)
+          
+   20:53:59 up 2 min,  0 users,  load average: 0.13, 0.07, 0.03; runlevel 5
+
+------------------------------------------------------------------------
+Benchmark Run: Wed Dec 19 2018 20:53:59 - 21:22:01
+64 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       25250449.5 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     4177.0 MWIPS (9.1 s, 7 samples)
+Execl Throughput                               3163.0 lps   (29.9 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        487289.6 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          138261.6 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       1401295.6 KBps  (30.0 s, 2 samples)
+Pipe Throughput                              822244.4 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 112905.5 lps   (10.0 s, 7 samples)
+Process Creation                               3525.5 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   5133.5 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   2295.9 lpm   (60.0 s, 2 samples)
+System Call Overhead                         685687.8 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   25250449.5   2163.7
+Double-Precision Whetstone                       55.0       4177.0    759.4
+Execl Throughput                                 43.0       3163.0    735.6
+File Copy 1024 bufsize 2000 maxblocks          3960.0     487289.6   1230.5
+File Copy 256 bufsize 500 maxblocks            1655.0     138261.6    835.4
+File Copy 4096 bufsize 8000 maxblocks          5800.0    1401295.6   2416.0
+Pipe Throughput                               12440.0     822244.4    661.0
+Pipe-based Context Switching                   4000.0     112905.5    282.3
+Process Creation                                126.0       3525.5    279.8
+Shell Scripts (1 concurrent)                     42.4       5133.5   1210.7
+Shell Scripts (8 concurrent)                      6.0       2295.9   3826.5
+System Call Overhead                          15000.0     685687.8    457.1
+                                                                   ========
+System Benchmarks Index Score                                         912.2
+
+------------------------------------------------------------------------
+Benchmark Run: Wed Dec 19 2018 21:22:01 - 21:50:06
+64 CPUs in system; running 16 parallel copies of tests
+
+Dhrystone 2 using register variables      403334866.0 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                    66820.6 MWIPS (9.1 s, 7 samples)
+Execl Throughput                              23823.6 lps   (29.9 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        318159.2 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks           80767.8 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       1069405.7 KBps  (30.0 s, 2 samples)
+Pipe Throughput                            13076147.4 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                1777769.3 lps   (10.0 s, 7 samples)
+Process Creation                              31573.7 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                  35527.4 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   7771.7 lpm   (60.0 s, 2 samples)
+System Call Overhead                        3331334.7 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0  403334866.0  34561.7
+Double-Precision Whetstone                       55.0      66820.6  12149.2
+Execl Throughput                                 43.0      23823.6   5540.4
+File Copy 1024 bufsize 2000 maxblocks          3960.0     318159.2    803.4
+File Copy 256 bufsize 500 maxblocks            1655.0      80767.8    488.0
+File Copy 4096 bufsize 8000 maxblocks          5800.0    1069405.7   1843.8
+Pipe Throughput                               12440.0   13076147.4  10511.4
+Pipe-based Context Switching                   4000.0    1777769.3   4444.4
+Process Creation                                126.0      31573.7   2505.8
+Shell Scripts (1 concurrent)                     42.4      35527.4   8379.1
+Shell Scripts (8 concurrent)                      6.0       7771.7  12952.9
+System Call Overhead                          15000.0    3331334.7   2220.9
+                                                                   ========
+System Benchmarks Index Score                                        4362.1
+

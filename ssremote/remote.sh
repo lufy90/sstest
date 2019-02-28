@@ -6,19 +6,24 @@
 . ./net_test.sh
 
 # test directory on REMOTE host
-test_dir=/opt/ltptest
 
-# result directory on LOCAL host
+test_dir=/opt/tests
 result_dir=~/results/result
+tst_user=root
+tst_pass=abc123
+
 
 usage()
 {
-  echo "Usage: $0 -H <HOST> -s <SCRIPT> [-p <PASSWORD>]"
-  echo "    Execute SCRIPT on host HOST, and copy results in $test_dir to "
-  echo "    local $result_dir."
-  echo "    Options:"
-  echo "    -p password"
-  echo "    -r test direcotry on HOST"
+  echo "Usage: $0 -H host -s script [-p password] [-r testdirectory]"
+}
+
+exe_on_remote()
+{
+  local password=$1
+  local host=$2
+  local cmd=$3
+  sshpass -p $password ssh -o StrictHostKeyChecking=no $host '$cmd'
 }
 
 main()
@@ -46,27 +51,12 @@ main()
       esac
     done
   
-<<!
-  if [ x$1 != x ]; then
-    echo "Unknown option: $1"
-    usage
-    exit 1
-  fi
-!
-  
   if [ x"$host" = x -o x"$script" = x ]; then
     echo "HOST and SCRIPT are required." >&2
     usage
     exit 1
   fi
   password=${password:-"abc123"}
-  
-  if net lookup $host; then
-    :
-  else
-    echo "ERROR: $host cannot be resolved."
-    exit 1
-  fi
   
   ssh_copy_id $host $password
   if [ -d $result_dir ]; then
@@ -88,7 +78,7 @@ main()
   fi
 }
 
-
+main
 ssh root@$host -- "mkdir -p $test_dir"
 scp $script root@$host:$test_dir
 scp ./net_test.sh root@$host:$test_dir

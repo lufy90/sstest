@@ -78,9 +78,10 @@ dmidecode > $infodir/dmidecode
 
 cp /etc/yum.repos.d -r $infodir/
 
-history >  $infodir/history
 ps -ef > $infodir/ps_-ef
 gcc -v > $infodir/gcc_-v 2>&1
+ip ad > $infodir/ip_ad 2>&1
+cp ~/.bash_history $infodir/bash_history
 
-# 20190219
+# 20190305
 

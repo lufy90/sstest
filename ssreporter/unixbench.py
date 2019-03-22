@@ -68,15 +68,15 @@ class UnixbenchSheetData(model.WBSheetData):
 
 if __name__ == '__main__':
   uf = UnixbenchSheetData()
-  uf.data_file_paths = ['samples/unixbench_isoft/test48-2018-12-19-01',
-                     'samples/unixbench_isoft/test48-2018-12-19-02',
-                     'samples/unixbench_isoft/test48-2018-12-19-03',
-                     'samples/results/deepin-2018-10-28-01',
-                     'samples/results/deepin-2018-10-28-02',
-                     'samples/results/deepin-2018-10-28-03',
+  uf.data_file_paths = ['samples/test48-2018-12-19-01',
+                     'samples/test48-2018-12-19-02',
+                     'samples/test48-2018-12-19-03',
+                     'samples/deepin-2018-10-28-01',
+                     'samples/deepin-2018-10-28-02',
+                     'samples/deepin-2018-10-28-03',
                      ]
 
-  print(uf.get_all_data())
+#  print(uf.get_all_data())
   uf.save_to_sheet()
   uf.wb.save('UnixbenchTestReport.xls')
 

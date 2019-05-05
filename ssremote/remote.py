@@ -58,6 +58,7 @@ def main(argv):
 
   script = Script(script)
 #  ssh_options = '-o StrictHostKeyChecking=no -o UserKnownHostsFile=/tmp/known_hosts'
+  os.system('ssh-keygen -f ~/.ssh/known_hosts -R %s' % host)
   if exe_on_remote(host, '[ -d %s ]' % tst_dir) == 0:
     ''' if tst_dir already exists on host '''
     i = 0

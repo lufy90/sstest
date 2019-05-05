@@ -85,3 +85,5 @@ cp ~/.bash_history $infodir/bash_history
 
 # 20190305
 
+env > $infodir/env 2>&1
+# 20190505

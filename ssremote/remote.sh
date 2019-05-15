@@ -3,7 +3,7 @@
 # for execute script on remote host.
 # By lufei @ 20180801
 
-. ./net_test.sh
+#. ./net_test.sh
 
 # test directory on REMOTE host
 
@@ -18,20 +18,20 @@ usage()
   echo "Usage: $0 -H host -s script [-p password] [-r testdirectory]"
 }
 
-exe_on_remote()
-{
-  local password=$1
-  local host=$2
-  local cmd=$3
-  sshpass -p $password ssh -o StrictHostKeyChecking=no $host '$cmd'
-}
+#exe_on_remote()
+#{
+#  local password=$1
+#  local host=$2
+#  local cmd=$3
+#  sshpass -p $password ssh -o StrictHostKeyChecking=no $host '$cmd'
+#}
 
 main()
 {
-  if [ x$1 = x ]; then
-    usage
-    exit 1
-  fi
+#  if [ x$1 == 'x' ]; then
+#    usage
+#    exit 1
+#  fi
   
   while getopts "H:s:p:r:" arg
     do
@@ -52,13 +52,13 @@ main()
     done
   
   if [ x"$host" = x -o x"$script" = x ]; then
-    echo "HOST and SCRIPT are required." >&2
+#    echo "HOST and SCRIPT are required." >&2
     usage
     exit 1
   fi
   password=${password:-"abc123"}
   
-  ssh_copy_id $host $password
+#  ssh_copy_id $host $password
   if [ -d $result_dir ]; then
     i=0
     while [ -d $result_dir.$i ]
@@ -66,11 +66,12 @@ main()
       i=$(($i+1))
       done
     result_dir=$result_dir.$i
+  else mkdir -p $result_dir
   fi
   
-  if ssh root@$host [[ -d $test_dir ]]; then
+  if sshpass -p $password ssh root@$host [[ -d $test_dir ]]; then
     i=0
-    while ssh root@$host [[ -d $test_dir.$i ]]
+    while sshpass -p $password ssh root@$host [[ -d $test_dir.$i ]]
       do
       i=$(($i+1))
       done
@@ -78,12 +79,11 @@ main()
   fi
 }
 
-main
-ssh root@$host -- "mkdir -p $test_dir"
-scp $script root@$host:$test_dir
-scp ./net_test.sh root@$host:$test_dir
-scp ./sys_test.sh root@$host:$test_dir
-ssh root@$host -- "cd $test_dir; sh $script"
+
+main $@
+sshpass -p $password ssh root@$host -- "mkdir -p $test_dir"
+sshpass -p $password scp $script root@$host:$test_dir
+sshpass -p $password ssh root@$host -- "cd $test_dir; sh ${script##*/}"
 
 # Copy test results to local.
-scp -r root@$host:$test_dir $result_dir
+sshpass -p $password scp -r root@$host:$test_dir $result_dir

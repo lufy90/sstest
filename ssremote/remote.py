@@ -68,10 +68,11 @@ def main(argv):
 
   if exe_on_remote(host, 'mkdir -p %s' % tst_dir) != 0:
     print("Error: mkdir %s failed." % tst_dir)
+    sys.exit(1)
 
   os.system('sshpass -p %s scp -o StrictHostKeyChecking=no %s %s@%s' % (
              password, script.file_name, user, host+':/'+tst_dir))
-  exe_on_remote(host, '\'cd %s; bash ./%s\'' % (tst_dir, script.name))
+  exe_on_remote(host, '\'cd %s; ./%s\'' % (tst_dir, script.name))
 
 
 if __name__ == '__main__':

@@ -3,5 +3,5 @@
 # settings of ssauto
 
 
-
+RESULT_DIR = './results'
 

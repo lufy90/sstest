@@ -104,7 +104,7 @@ class Options():
         if not t:
           print('test not found: %s in %s'%(t_mame, m_name))
           sys.exit(2)
-        t_instanse = t()
+        t_instanse = t(m_name)
         t_instanse.run()
     else:
       try:
@@ -114,7 +114,7 @@ class Options():
         print('failed import test module: %s' % m_name)
         sys.exit(2)
       for t in lib.get_tests(m):
-        t_instanse = t()
+        t_instanse = t(m_name)
         t_instanse.run()
 
   def runall(self, args):

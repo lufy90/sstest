@@ -117,3 +117,6 @@ def get_test_m(m_name, t_name):
   except Exception as e:
     print(e)
     return None
+
+def banner(title, ):
+  pass

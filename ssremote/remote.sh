@@ -12,7 +12,7 @@ result_dir=~/results/result
 tst_user=root
 tst_pass=abc123
 
-
+echo "Differ from remote.py, copies result back, remote.py not"
 usage()
 {
   echo "Usage: $0 -H host -s script [-p password] [-r testdirectory]"

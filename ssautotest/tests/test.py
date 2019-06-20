@@ -91,6 +91,7 @@ class Test():
     '''run test'''
     self.pre_test()
     for i in range(self.iteration):
+      print('#%d' % i)
       self.exe_test(i)
       if i < self.iteration -1 :
         time.sleep(self.interval)

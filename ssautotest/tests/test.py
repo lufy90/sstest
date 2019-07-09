@@ -24,6 +24,7 @@ class Test():
   tst_dir = '/tmp/'
   r_results = ''
   interval = 10
+  tst_priority = 1
   def __init__(self, module_name):
     self.tst_time = time.strftime('%Y%m%d %H%M%S', time.localtime())
     self.name = type(self).__name__

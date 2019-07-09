@@ -2,6 +2,15 @@
 # By lufei at 20180801
 # Getting system info.
 
+
+# 20190703
+# add hostname > hostname
+
+# 20190703
+# add blkid
+
+export LANG=en_US.UTF-8
+
 hostname=`hostname`
 infodir=${hostname}-info
 
@@ -18,8 +27,10 @@ fi
 mkdir $infodir
 
 # system status
+hostname > $infodir/hostname
 date > $infodir/date
 cp /etc/*release $infodir
+arch > $infodir/arch
 systemctl list-unit-files > $infodir/systemctl_list-unit-files
 chkconfig --list > $infodir/chkconfig_--list
 sestatus -v > $infodir/sestatus_-v
@@ -37,6 +48,7 @@ free -m > $infodir/free_-m
 lspci -vvv > $infodir/lspci_-vvv
 
 lsblk > $infodir/lsblk
+blkid > $infodir/blkid
 for blc in `lsblk | grep ^[a-z] | awk '{print $1}'`
   do
     smartctl -a /dev/$blc > $infodir/smartctl_-a_$blc
@@ -75,6 +87,7 @@ uname -a > $infodir/uname_-a
 lshw > $infodir/lshw
 lshw -xml > $infodir/lshw_-xml
 dmidecode > $infodir/dmidecode
+dmidecode -u --dump-bin $infodir/dmidecode-bin
 
 cp /etc/yum.repos.d -r $infodir/
 

@@ -3,5 +3,13 @@
 #
 
 
+
 Super Simple Autotest
 Execute test anywhere
+
+
+This project is abolished for reasons:
+
+1. Cannot deal with test hosts well. Only can be specified in cases, but should be aparted from case codes.
+2. Bugs in results handling, when test iterations > 1 and in different hosts, new results may cover the old.
+

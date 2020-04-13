@@ -29,6 +29,7 @@ mkdir $infodir
 # system status
 hostname > $infodir/hostname
 date > $infodir/date
+timedatectl > $infodir/timedatectl
 cp /etc/*release $infodir
 arch > $infodir/arch
 systemctl list-unit-files > $infodir/systemctl_list-unit-files
@@ -96,6 +97,8 @@ cp /etc/yum.repos.d -r $infodir/
 
 ps -ef > $infodir/ps_-ef
 gcc -v > $infodir/gcc_-v 2>&1
+g++ -v > $infodir/g++_-v 2>&1
+gfortran -v > $infodir/gfortran_-v 2>&1
 ip ad > $infodir/ip_ad 2>&1
 cp ~/.bash_history $infodir/bash_history
 
@@ -107,21 +110,15 @@ env > $infodir/env 2>&1
 
 # list all cd recorders.
 cdrecord -scanbus
-
-# 
 cp /proc/cmdline $infodir/
 cp /boot/grub/grub.cfg $infodir/
-
-# 20190802
 java -version > $infodir/java_-version 2>&1
-
-# 20190805
 lvs > $infodir/lvs
-
-# 20190920
 yum list > $infodir/yum_list_$(date "+%Y%m%d")
-
-
-# 20190921
 rpm -qi kernel > $infodir/rpm_-qi_kernel
 rpm -ql kernel > $infodir/rpm_-ql_kernel
+ulimit -a > $infodir/ulimit_-a
+
+
+echo "Finished!"
+echo "See $infodir"

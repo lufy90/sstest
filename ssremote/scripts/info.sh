@@ -3,12 +3,6 @@
 # Getting system info.
 
 
-# 20190703
-# add hostname > hostname
-
-# 20190703
-# add blkid
-
 export LANG=en_US.UTF-8
 
 hostname=`hostname`
@@ -101,13 +95,7 @@ g++ -v > $infodir/g++_-v 2>&1
 gfortran -v > $infodir/gfortran_-v 2>&1
 ip ad > $infodir/ip_ad 2>&1
 cp ~/.bash_history $infodir/bash_history
-
-
-# 20190305
-
 env > $infodir/env 2>&1
-# 20190505
-
 # list all cd recorders.
 cdrecord -scanbus
 cp /proc/cmdline $infodir/
@@ -118,7 +106,10 @@ yum list > $infodir/yum_list_$(date "+%Y%m%d")
 rpm -qi kernel > $infodir/rpm_-qi_kernel
 rpm -ql kernel > $infodir/rpm_-ql_kernel
 ulimit -a > $infodir/ulimit_-a
+cp /root/anaconda-ks.cfg $infodir/
+last > $infodir/last
+netstat -tunlp > $infodir/netsat_-tunlp
 
 
-echo "Finished!"
-echo "See $infodir"
+echo -e "\e[1mFinished!\e[0m"
+echo -e "\e[1mSee $infodir\e[0m"

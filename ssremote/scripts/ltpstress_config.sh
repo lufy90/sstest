@@ -4,10 +4,11 @@
 # Date: 20191011 17:53:15
 # for ltpstress running configuration.
 
+# Some configurations only take effect after reboot.
 
 
-url="http://192.168.45.37:8000/sw_64/ltp-20180926-1.isoft.sw_64.rpm"
-yum install -y $url
+#url="http://192.168.45.37:8000/sw_64/ltp-20180926-1.isoft.sw_64.rpm"
+#yum install -y $url
 
 setup(){
 
@@ -30,6 +31,11 @@ setup(){
     systemctl enable rsh.socket
     systemctl enable rlogin.socket
     systemctl enable nfs
+
+##  Disable selinux or apparmor
+    sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
+    setenforce 0 || echo "ERROR: setenforce 0"
+
 }
 
 
